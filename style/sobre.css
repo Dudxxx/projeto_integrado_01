@@ -1,0 +1,77 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: 'Urbanist', sans-serif;
+    background-color: #1e1e2f; /* fundo escuro suave */
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding-top: 80px; /* espaço para o header fixo */
+  }
+  
+  /* Cabeçalho */
+  header {
+    background: linear-gradient(90deg, #df50df, #800080);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Organização interna */
+  header,
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  /* Menu */
+  nav ul {
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  /* Links */
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffd6ff;
+  }
+  
+  /* Botões */
+  button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    background-color: white;
+    color: purple;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #f3d1f3;
+  }
+  
+  /* Título */
+  h1 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+
+  
