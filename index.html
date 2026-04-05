@@ -1,22 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="../style/index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Eclipse Carmesim</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>HOME</h1>
+    <div class="sobreposicao"></div>
+
+    <header class="barra-superior">
+        <div class="marca">
+            <span class="simbolo-marca">☠</span>
+            <div>
+                <h1>ECLIPSE CARMESIM</h1>
+                <p>O rei dos vampiros aguarda o seu desafio.</p>
+            </div>
+        </div>
+
         <nav>
-         <ul>
-          <a href="./index.html"><button>HOME</button></a>
-          <a href="pages/galeria.html"><button>GALERIA</button></a>
-          <a href="pages/contato.html"><button>CONTATO</button></a>
-          <a href="pages/sobre.html"><button>SOBRE</button></a>
-        </ul>
+            <ul class="links-navegacao">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="pages/galeria.html">Galeria</a></li>
+                <li><a href="pages/contato.html">Contato</a></li>
+                <li><a href="pages/sobre.html">Sobre</a></li>
+            </ul>
         </nav>
-         </header>
+    </header>
+
+    <main class="hero">
+        <section class="conteudo-hero">
+            <p class="etiqueta">Aventura sombria • ação 2D • combate intenso</p>
+
+            <h2>Entre na noite.<br>Derrote os vampiros.<br>Enfrente o Rei.</h2>
+
+            <p class="descricao">
+                Assuma o papel de um espadachim solitário em uma jornada por terras amaldiçoadas,
+                onde cada confronto exige reflexo, precisão e coragem.
+            </p>
+
+            <div class="grupo-cta">
+                <a href="pages/jogo.html" class="botao botao-principal">JOGAR</a>
+            </div>
+
+            <div class="estatisticas">
+                <div>
+                    <strong>Combate rápido</strong>
+                    <span>ações diretas e responsivas</span>
+                </div>
+                <div>
+                    <strong>Visual sombrio</strong>
+                    <span>clima gótico e imersivo</span>
+                </div>
+                <div>
+                    <strong>Desafio justo</strong>
+                    <span>difícil, mas recompensador</span>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
