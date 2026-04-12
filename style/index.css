@@ -1,6 +1,5 @@
 :root {
     --fundo: #0c0712;
-    --fundo-suave: #160d1f;
     --painel: rgba(20, 10, 26, 0.72);
     --borda-painel: rgba(255, 255, 255, 0.08);
     --texto: #f5effa;
@@ -18,7 +17,7 @@
 }
 
 html, body {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -50,15 +49,17 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 24px;
-    padding: 24px 5vw;
+    padding: 24px clamp(20px, 5vw, 72px);
     background: linear-gradient(180deg, rgba(0,0,0,0.45), transparent);
     backdrop-filter: blur(10px);
+    flex-wrap: wrap;
 }
 
 .marca {
     display: flex;
     align-items: center;
     gap: 14px;
+    min-width: 0;
 }
 
 .simbolo-marca {
@@ -70,18 +71,19 @@ body {
     background: linear-gradient(145deg, rgba(193, 18, 63, 0.95), rgba(109, 9, 33, 0.9));
     box-shadow: var(--sombra);
     font-size: 1.4rem;
+    flex: 0 0 auto;
 }
 
 .marca h1 {
     font-family: 'Cinzel', serif;
     letter-spacing: 2px;
-    font-size: 1.35rem;
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
     line-height: 1.1;
 }
 
 .marca p {
     color: var(--texto-suave);
-    font-size: 0.92rem;
+    font-size: clamp(0.82rem, 1.2vw, 0.92rem);
     margin-top: 4px;
 }
 
@@ -90,6 +92,7 @@ body {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .links-navegacao a {
@@ -100,6 +103,9 @@ body {
     border-radius: 999px;
     background: rgba(255,255,255,0.03);
     transition: 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .links-navegacao a:hover,
@@ -116,12 +122,12 @@ body {
     min-height: calc(100vh - 92px);
     display: grid;
     place-items: center;
-    padding: 40px 5vw 70px;
+    padding: clamp(24px, 4vw, 70px) clamp(20px, 5vw, 72px) 70px;
 }
 
 .conteudo-hero {
-    width: min(100%, 980px);
-    padding: 52px;
+    width: min(100%, 1100px);
+    padding: clamp(28px, 5vw, 56px);
     border-radius: 32px;
     background: var(--painel);
     border: 1px solid var(--borda-painel);
@@ -133,7 +139,7 @@ body {
 .etiqueta {
     display: inline-block;
     color: var(--dourado);
-    font-size: 0.92rem;
+    font-size: clamp(0.78rem, 1vw, 0.92rem);
     letter-spacing: 1.8px;
     text-transform: uppercase;
     margin-bottom: 18px;
@@ -141,7 +147,7 @@ body {
 
 .hero h2 {
     font-family: 'Cinzel', serif;
-    font-size: clamp(2.5rem, 6vw, 5.2rem);
+    font-size: clamp(2.2rem, 6vw, 5.4rem);
     line-height: 0.95;
     letter-spacing: 1px;
     text-shadow: 0 8px 30px rgba(0,0,0,0.55);
@@ -151,7 +157,7 @@ body {
 .descricao {
     max-width: 760px;
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
     line-height: 1.8;
     color: var(--texto-suave);
 }
@@ -201,7 +207,7 @@ body {
 .estatisticas {
     margin-top: 38px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 14px;
 }
 
@@ -211,6 +217,7 @@ body {
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.08);
     text-align: left;
+    min-width: 0;
 }
 
 .estatisticas strong {
@@ -226,27 +233,30 @@ body {
     line-height: 1.5;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
     .barra-superior {
         flex-direction: column;
         align-items: flex-start;
     }
 
+    .links-navegacao {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 600px) {
     .conteudo-hero {
-        padding: 34px 22px;
         border-radius: 24px;
+        padding: 24px 18px;
     }
 
-    .estatisticas {
-        grid-template-columns: 1fr;
-    }
-
-    .botao {
+    .botao,
+    .botao-principal {
         width: 100%;
         min-width: unset;
     }
 
-    .botao-principal {
-        padding: 20px 30px;
+    .grupo-cta {
+        flex-direction: column;
     }
 }

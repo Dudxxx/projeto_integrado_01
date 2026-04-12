@@ -1,22 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="../style/contato.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Contato | Eclipse Carmesim</title>
+    <link rel="stylesheet" href="../style/contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>CONTATO</h1>
+    <div class="sobreposicao"></div>
+
+    <header class="barra-superior">
+        <div class="marca">
+            <span class="simbolo-marca">☠</span>
+            <div>
+                <h1>ECLIPSE CARMESIM</h1>
+                <p>Fale com a equipe do projeto.</p>
+            </div>
+        </div>
+
         <nav>
-         <ul>
-            <a href="../index.html"><button>HOME</button></a>
-            <a href="./galeria.html"><button>GALERIA</button></a>
-            <a href="./contato.html"><button>CONTATO</button></a>
-            <a href="sobre.html"><button>SOBRE</button></a>
-        </ul>
+            <ul class="links-navegacao">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+            </ul>
         </nav>
-         </header>
+    </header>
+
+    <main class="pagina-contato">
+        <section class="conteudo-contato">
+            <div class="texto-apresentacao">
+                <p class="etiqueta">Contato</p>
+                <h2>Entre em contato com a equipe</h2>
+                <p class="descricao">
+                    Tem dúvidas, sugestões ou deseja enviar feedback sobre o jogo?
+                    Use o formulário abaixo para falar com a equipe de Eclipse Carmesim.
+                </p>
+
+                <div class="blocos-informacao">
+                    <article class="cartao-info">
+                        <h3>Resposta rápida</h3>
+                        <p>Seu contato será analisado com atenção para melhorar a experiência do jogo.</p>
+                    </article>
+
+                    <article class="cartao-info">
+                        <h3>Feedback do jogador</h3>
+                        <p>Sugestões ajudam a deixar o combate, a interface e a história ainda melhores.</p>
+                    </article>
+
+                    <article class="cartao-info">
+                        <h3>Suporte do projeto</h3>
+                        <p>Se encontrar algum problema, envie uma mensagem com detalhes para facilitar a correção.</p>
+                    </article>
+                </div>
+            </div>
+
+            <section class="cartao-formulario">
+                <h3>Envie sua mensagem</h3>
+
+                <form class="formulario">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Sobre o que você quer falar?" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="botao-enviar">ENVIAR MENSAGEM</button>
+                </form>
+            </section>
+        </section>
+    </main>
 </body>
 </html>

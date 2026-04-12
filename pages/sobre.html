@@ -1,22 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="../style/sobre.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
+    <title>Sobre | Eclipse Carmesim</title>
+    <link rel="stylesheet" href="../style/sobre.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>SOBRE</h1>
+    <div class="sobreposicao"></div>
+
+    <header class="barra-superior">
+        <div class="marca">
+            <span class="simbolo-marca">☠</span>
+            <div>
+                <h1>ECLIPSE CARMESIM</h1>
+                <p>Conheça o mundo, a história e os comandos.</p>
+            </div>
+        </div>
+
         <nav>
-         <ul>
-            <a href="../index.html"><button>HOME</button></a>
-            <a href="./galeria.html"><button>GALERIA</button></a>
-            <a href="./contato.html"><button>CONTATO</button></a>
-            <a href="sobre.html"><button>SOBRE</button></a>
-        </ul>
+            <ul class="links-navegacao">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+            </ul>
         </nav>
-         </header>
+    </header>
+
+    <main class="pagina-sobre">
+        <section class="conteudo-sobre">
+            <div class="apresentacao">
+                <p class="etiqueta">Sobre o jogo</p>
+                <h2>Uma jornada sombria contra o Rei dos Vampiros</h2>
+                <p class="descricao">
+                    Eclipse Carmesim é um jogo de ação 2D com combate rápido, ambientação gótica
+                    e foco em reflexos. O jogador controla um espadachim solitário que atravessa
+                    cenários amaldiçoados em busca de derrotar os vampiros que dominam a região.
+                </p>
+            </div>
+
+            <section class="grade-sobre">
+                <article class="cartao-texto">
+                    <h3>História</h3>
+                    <p>
+                        Após uma sequência de ataques misteriosos, vilas inteiras foram tomadas pela escuridão.
+                        Criaturas vampíricas passaram a atacar viajantes e destruir tudo ao redor.
+                        No centro dessa ameaça está o Rei dos Vampiros, responsável pela maldição que assola o mundo.
+                    </p>
+                    <p>
+                        O protagonista, um espadachim habilidoso, decide enfrentar esse reinado sombrio.
+                        Sua missão é atravessar campos devastados, cemitérios abandonados e fortalezas antigas
+                        até alcançar o inimigo final e pôr fim ao terror.
+                    </p>
+                </article>
+
+                <article class="cartao-texto">
+                    <h3>Comandos</h3>
+                    <div class="lista-comandos">
+                        <div class="comando">
+                            <span class="tecla">←</span>
+                            <p><strong>Seta para esquerda:</strong> vai para esquerda</p>
+                        </div>
+
+                        <div class="comando">
+                            <span class="tecla">→</span>
+                            <p><strong>Seta para direita:</strong> vai para direita</p>
+                        </div>
+
+                        <div class="comando">
+                            <span class="tecla">↑</span>
+                            <p><strong>Seta para cima:</strong> pular</p>
+                        </div>
+
+                        <div class="comando">
+                            <span class="tecla">ESPAÇO</span>
+                            <p><strong>Espaço:</strong> ataque</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cartao-texto destaque">
+                    <h3>Experiência do jogador</h3>
+                    <p>
+                        O jogo foi pensado para entregar ação intensa, controles simples e desafios justos.
+                        A ideia é manter o jogador sempre em movimento, alternando entre ataque, desvio e avanço
+                        pelos cenários até o confronto final.
+                    </p>
+                </article>
+            </section>
+        </section>
+    </main>
 </body>
 </html>
