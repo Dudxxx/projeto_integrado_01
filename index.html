@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eclipse Carmesim</title>
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="./style/base.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="./script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -24,11 +26,16 @@
         <nav>
             <ul class="links-navegacao">
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="pages/galeria.html">Galeria</a></li>
-                <li><a href="pages/contato.html">Contato</a></li>
-                <li><a href="pages/sobre.html">Sobre</a></li>
+                <li><a href="./pages/galeria.html">Galeria</a></li>
+                <li><a href="./pages/contato.html">Contato</a></li>
+                <li><a href="./pages/sobre.html">Sobre</a></li>
             </ul>
         </nav>
+
+        <div class="topo-acoes">
+            <button type="button" class="botao-topo" data-botao-idade>Verificar idade</button>
+            <button type="button" class="botao-topo" data-botao-tema>Tema Claro</button>
+        </div>
     </header>
 
     <main class="hero">
@@ -43,7 +50,7 @@
             </p>
 
             <div class="grupo-cta">
-                <a href="projeto_integrado_vampiro/index.html" class="botao botao-principal">JOGAR</a>
+                <a href="./projeto_integrado_vampiro/index.html" class="botao botao-principal">JOGAR</a>
             </div>
 
             <div class="estatisticas">
@@ -60,11 +67,20 @@
                     <span>difícil, mas recompensador</span>
                 </div>
             </div>
+
+            <section class="personalizacao">
+                <h3>Saudação do viajante</h3>
+
+                <form class="form-personalizacao" data-form-nome>
+                    <input type="text" data-input-nome placeholder="Digite seu nome">
+                    <button type="submit" class="botao-personalizar">SALVAR NOME</button>
+                </form>
+
+                <p class="mensagem-personalizada" data-mensagem-nome>
+                    Digite seu nome para receber uma saudação.
+                </p>
+            </section>
         </section>
     </main>
 </body>
-<<<<<<< HEAD
-</html> 
-=======
 </html>
->>>>>>> 7acf1de0aaf0850a34f06f0713e0c38d72001de4

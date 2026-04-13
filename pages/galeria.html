@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria | Eclipse Carmesim</title>
+    <link rel="stylesheet" href="../style/base.css">
     <link rel="stylesheet" href="../style/galeria.css">
+    <script src="../script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -29,6 +31,11 @@
                 <li><a href="./sobre.html">Sobre</a></li>
             </ul>
         </nav>
+
+        <div class="topo-acoes">
+            <button type="button" class="botao-topo" data-botao-idade>Verificar idade</button>
+            <button type="button" class="botao-topo" data-botao-tema>Tema Claro</button>
+        </div>
     </header>
 
     <main class="pagina-galeria">
@@ -43,7 +50,7 @@
 
             <section class="grade-galeria">
                 <article class="cartao-imagem">
-                    <img src="../img/cena1.png" alt="Cena sombria do cemitério">
+                    <img src="../imgs/image1.png" alt="Cena sombria do cemitério" data-sensivel>
                     <div class="legenda">
                         <h3>Cemitério amaldiçoado</h3>
                         <p>O cenário inicial, cercado por sombras e perigo.</p>
@@ -51,15 +58,7 @@
                 </article>
 
                 <article class="cartao-imagem">
-                    <img src="../img/cena2.png" alt="Espadachim enfrentando vampiros">
-                    <div class="legenda">
-                        <h3>Confronto direto</h3>
-                        <p>Combate rápido contra inimigos vampíricos.</p>
-                    </div>
-                </article>
-
-                <article class="cartao-imagem">
-                    <img src="../img/cena3.png" alt="Ambiente escuro do castelo">
+                    <img src="../imgs/image.png" alt="Ambiente escuro do castelo" data-sensivel>
                     <div class="legenda">
                         <h3>Castelo da noite</h3>
                         <p>Uma área tomada pela presença do Rei dos Vampiros.</p>
@@ -67,7 +66,7 @@
                 </article>
 
                 <article class="cartao-imagem">
-                    <img src="../img/cena4.png" alt="Chefe final do jogo">
+                    <img src="../imgs/image2.png" alt="Chefe final do jogo" data-sensivel>
                     <div class="legenda">
                         <h3>Rei dos Vampiros</h3>
                         <p>O grande desafio final do jogo.</p>
